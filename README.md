@@ -1,7 +1,14 @@
-# 🚀 **DevOps Project: ZOMATO Clone App Deployment**
+# 🚀 DevOps Project: ZOMATO Clone App Deployment
 
-In this **DevOps project**, I demonstrate how to **deploy a ZOMATO Clone App** using a variety of modern DevOps tools and services.
+In this **DevOps project**, I demonstrate how to deploy a **ZOMATO Clone Application** using a wide range of modern DevOps tools and cloud-native practices.  
+This project covers **CI/CD, security scanning, containerization, monitoring, Kubernetes, and GitOps** end to end.
 
+---
+
+## 🔗 Repository
+```
+https://github.com/Jaganp-Devops/Zomato-App.git
+```
 ## 🛠️ Tools & Services Used:
 
 1. **GitHub** ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
@@ -17,52 +24,85 @@ In this **DevOps project**, I demonstrate how to **deploy a ZOMATO Clone App** u
 
 ---
 
-### Project Stages:
 
-1. **Stage 1** - Deployment of App to Docker Container
-2. **Stage 2** - Deployment of App to K8S Cluster with Monitoring
+## 🔁 CI/CD Pipeline Flow
 
----
-
-### 📂 GitHub Repo Link:  
-[**ZOMATO Clone DevOps Project**](#)
-
-### 📹 DevOps Project Video Link:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtu.be/GyoI6-I68aQ)
-
-### 📺 Docker Playlist Video Link:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PLs-PsDpuAuTeNx3OgGQ1QrpNBo-XE6VBh)
-
----
-
-## 📂 Other DevOps Projects
-
-### 🟠 **SWIGGY App Project**:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtu.be/x55z7rk0NAU)
-
-### 🔵 **SonarQube Video Link**:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=sonarqube&logoColor=white)](https://youtu.be/ScdedztTaAU)
-
-### 🟡 **Nexus Video Link**:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=nexus&logoColor=white)](https://youtu.be/opJAfDOCZuI)
+1. Clean Jenkins workspace  
+2. Clone source code from GitHub  
+3. SonarQube analysis  
+4. SonarQube Quality Gate (non-blocking)  
+5. Install NPM dependencies  
+6. OWASP Dependency vulnerability scan  
+7. Trivy filesystem scan  
+8. Build Docker image  
+9. Push image to DockerHub  
+10. Docker Scout security insights  
+11. Deploy application using Docker container  
+12. Email notification with scan reports  
 
 ---
 
-## Connect with me on LinkedIn:  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kastro-kiran/)
+## ⚙️ Jenkins Pipeline Highlights
 
-## Join the WhatsApp Group for DevOps technical discussions!
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/EGw6ZlwUHZc82cA0vXFnwm) 
-
----
-
-### Feedback Request:  
-
-After deploying the app, please share your opinion on LinkedIn along with the Project link and tag me on LinkedIn. Help the video reach wider DevOps enthusiasts.
+- Declarative Jenkins pipeline  
+- Secure credential management  
+- Quality & security checks before deployment  
+- Docker image lifecycle automation  
+- Non-blocking scans for demo & learning  
+- Email notification on every build  
 
 ---
 
-## Happy learning!  
-<img src="https://media.licdn.com/dms/image/v2/D5603AQHJB_lF1d9OSw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718971147172?e=1735776000&v=beta&t=HC_e0eOufPvf8XQ0P7iI9GDm9hBSIh5FwQaGsL_8ivo" alt="Kastro Profile Image" width="100" height="100" style="border-radius:50%;">
+## 🖥️ Infrastructure Overview
 
-KASTRO KIRAN V
+### Jenkins Server
+- OS: Ubuntu 24.04  
+- Instance Type: t2.large  
+- Ports: 22, 8080  
+
+### Monitoring Server
+- Prometheus
+- Node Exporter
+- Grafana
+
+---
+
+## ☸️ Kubernetes Deployment (EKS)
+
+- EKS cluster created using `eksctl`
+- Managed node groups with auto-scaling
+- Application deployed via Kubernetes manifests
+- GitOps workflow using Argo CD
+- Application exposed using NodePort / LoadBalancer
+
+---
+
+## 📊 Monitoring & Observability
+
+- **Prometheus** scrapes metrics from:
+  - Jenkins
+  - EC2 / Node Exporter
+  - Kubernetes nodes
+- **Grafana** visualizes metrics using dashboards
+
+---
+
+## 📈 Final Outcome
+
+- ✅ Fully automated CI/CD pipeline  
+- ✅ Secure DevOps workflow with scanning  
+- ✅ Docker image pushed to DockerHub  
+- ✅ Application deployed on Docker & Kubernetes  
+- ✅ Real-time monitoring with Grafana dashboards  
+
+---
+
+## 🧠 Key Learnings
+
+- Jenkins CI/CD pipelines  
+- Secure DevOps & vulnerability scanning  
+- Docker & Kubernetes deployments  
+- GitOps using Argo CD  
+- Monitoring with Prometheus & Grafana  
+
+---
