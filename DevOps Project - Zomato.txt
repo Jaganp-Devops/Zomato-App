@@ -1,7 +1,7 @@
-DevOps Project - Dr. Kastro Kiran
+DevOps Project - Jagan
 Deployment of ZOMATO Project
 --------------------------------------------
-Repo URL: https://github.com/KastroVKiran/DevOps-Project-Zomato-Kastro.git
+Repo URL: https://github.com/Jaganp-Devops/Zomato-App.git
 
 
 1. Launch an Instance (Ubuntu, 24.04, t2.large, 30 GB)
