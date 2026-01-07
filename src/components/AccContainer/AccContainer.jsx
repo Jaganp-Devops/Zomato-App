@@ -13,5 +13,4 @@ const AccContainer = () => {
     </div>
   );
 };
-
 export default AccContainer;
